@@ -7,7 +7,13 @@
         <%= text_field_tag :'student[last_name]'%><br>
 
         <%= submit_tag "Submit Student" %>
+
+        
         <% end %>
+
+        <%= session[:form_params] if session[:form_params]%>
+
+      
       
 
 
